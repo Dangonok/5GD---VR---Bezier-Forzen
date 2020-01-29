@@ -88,6 +88,11 @@ public class SplineManager : MonoBehaviour
                 if (1f - 1f/spline.pointCount < splineFollower.result.percent)
                 {
                     InstantiateANewAnchor(false, null);
+                    SoundManager.Instance.NewPartCreate();
+                }
+                else
+                {
+                    SoundManager.Instance.NewPartCreateInpossible();
                 }
             }
             //lastTimeInstant = Time.time;

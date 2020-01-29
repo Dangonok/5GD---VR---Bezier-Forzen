@@ -93,6 +93,7 @@ public class SoundManager : Singleton<SoundManager>
 
     /// <summary>
     /// When the player touch a collectible
+    /// DONE
     /// </summary>
     public void ContactSoundCollectible()
     {
@@ -101,6 +102,7 @@ public class SoundManager : Singleton<SoundManager>
 
     /// <summary>
     /// When the player touch the interest point
+    /// DONE
     /// </summary>
     public void ContactSoundInterestPoint()
     {
@@ -133,10 +135,12 @@ public class SoundManager : Singleton<SoundManager>
 
     /// <summary>
     /// When the player hit the button to create a path
+    /// Done
     /// </summary>
     public void NewPartCreate()
     {
         newPartCreateInstance.start();
+
     }
 
     /// <summary>
@@ -173,6 +177,7 @@ public class SoundManager : Singleton<SoundManager>
 
     /// <summary>
     /// when the player hit a wall
+    /// DONE
     /// </summary>
     public void DeathOfCharacter()
     {

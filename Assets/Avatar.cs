@@ -110,6 +110,7 @@ public class Avatar : MonoBehaviour
     {
         if (other.tag == "Death")
         {
+            SoundManager.Instance.DeathOfCharacter();
             print("death");
             splineManager.DestroyTheLastX(GameManager.Instance.datas.deathRedo);
         }
@@ -117,7 +118,12 @@ public class Avatar : MonoBehaviour
         {
             collectibleCount += 1;
             collectibleText.text = "Collectible : " + collectibleCount.ToString() + "/" + howManyCollectibleYouNeed.ToString();
+            SoundManager.Instance.ContactSoundCollectible();
             Destroy(other.gameObject);
+        }
+        if (other.tag == "InterestPoint")
+        {
+            SoundManager.Instance.ContactSoundInterestPoint();
         }
     }
 
