@@ -85,7 +85,7 @@ public class SplineManager : MonoBehaviour
             }
             else
             {
-                if (1f - 1f/spline.pointCount < splineFollower.result.percent)
+                if (1f - (1f/spline.pointCount)*2 < splineFollower.result.percent)
                 {
                     InstantiateANewAnchor(false, null);
                     SoundManager.Instance.NewPartCreate();
@@ -106,7 +106,7 @@ public class SplineManager : MonoBehaviour
 
         if (GameManager.Instance.datas.previsualisation /*&& lastTimeInstant + 1f < Time.time*/)
         {
-            if (1f - 1f / spline.pointCount < splineFollower.result.percent)
+            if (1f - (1f / spline.pointCount)*2 < splineFollower.result.percent)
             {
                 MakeThePevisualisation(baseMaterialPrevisualisation);
             }
@@ -197,7 +197,7 @@ public class SplineManager : MonoBehaviour
         }
         spline.SetPoints(newPoints);
         waitForEndOfFrame = true;
-        splineFollower.result.percent = (double)(splineFollower.result.percent * ((double)1 + (double)1 / (double)spline.pointCount));
+        splineFollower.result.percent = (double)(splineFollower.result.percent * ((double)1 - (double)1 / (double)spline.pointCount));
     }
 
     public void DestroyTheFirstX(int numberOfSegment)
