@@ -98,6 +98,7 @@ public class SplineManager : MonoBehaviour
                 if (1f - (1f/spline.pointCount)*2 < splineFollower.result.percent)
                 {
                     InstantiateANewAnchor(false, null);
+                    SoundManager.Instance.NewPartCreate();
                     print("Yolo");
                 }
                 else
@@ -346,7 +347,7 @@ public class SplineManager : MonoBehaviour
         }
         newPoints[newPoints.Length - 1] = newPoint;
         spline.SetPoints(newPoints);
-        SoundManager.Instance.NewPartCreate();
+        
 
     }
 }
