@@ -32,6 +32,8 @@ public class SplineManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.Song();
+
         if (GameManager.Instance.datas.preInstantiate == true)
         {
             PreInstantiate();

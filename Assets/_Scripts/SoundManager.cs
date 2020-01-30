@@ -70,6 +70,10 @@ public class SoundManager : Singleton<SoundManager>
     public string activationOfPower;
     private EventInstance activationOfPowerInstance;
 
+    [EventRef]
+    public string song;
+    private EventInstance songInstance;
+
 
     private void Awake()
     {
@@ -88,6 +92,12 @@ public class SoundManager : Singleton<SoundManager>
         deathOfCharacterInstance = RuntimeManager.CreateInstance(deathOfCharacter);
         nearAWallInstance = RuntimeManager.CreateInstance(nearAWall);
         activationOfPowerInstance = RuntimeManager.CreateInstance(activationOfPower);
+        songInstance = RuntimeManager.CreateInstance(song);
+    }
+
+    public void Song()
+    {
+        songInstance.start();
     }
 
 

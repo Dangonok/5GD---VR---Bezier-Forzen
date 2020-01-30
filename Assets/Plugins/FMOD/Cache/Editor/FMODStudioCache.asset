@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114248927497885942}
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   EditorEvents:
   - {fileID: 114180763179091598}
   - {fileID: 114035235271626414}
@@ -23,12 +23,13 @@ MonoBehaviour:
   - {fileID: 114191013120553870}
   - {fileID: 114014214669107580}
   - {fileID: 114653001166402786}
+  - {fileID: 114686549725431710}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   StringsBanks:
   - {fileID: 114248927497885942}
-  stringsBankWriteTime: 637160024308127108
+  stringsBankWriteTime: 637160082434957389
   cacheVersion: 3
 --- !u!114 &114014214669107580
 MonoBehaviour:
@@ -45,7 +46,7 @@ MonoBehaviour:
   Path: event:/Interest Point Zone
   guid: 94330dbc9ad2274ba7886de508782fd1
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -68,7 +69,7 @@ MonoBehaviour:
   Path: event:/Impossible creation path
   guid: 89b3a8c3a31e1c4c8a69520251c96c18
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -243,6 +244,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &114174232975829694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637160082434847677
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114180763179091598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +277,7 @@ MonoBehaviour:
   Path: event:/Collectible Impact
   guid: 7cc64c312b845d49b131379330a6b42e
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -281,7 +300,7 @@ MonoBehaviour:
   Path: event:/Create New Part
   guid: 2e3eceff0edd0f4885bc8c3d38230309
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -325,11 +344,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637160024308127108
+  lastModified: 637160082434957389
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1074
+    Value: 1108
   Exists: 1
 --- !u!114 &114263626667231968
 MonoBehaviour:
@@ -641,7 +660,7 @@ MonoBehaviour:
   Path: event:/Interest Point Impact
   guid: d0973967f06926418b9646474f0bb7ef
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -664,7 +683,7 @@ MonoBehaviour:
   Path: event:/Impact Death 2
   guid: 350d754edbb4934aa48578fc43131dc9
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -690,6 +709,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114686549725431710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Song
+  m_EditorClassIdentifier: 
+  Path: event:/Song
+  guid: c7e4dff0bb31894baf0bddf978b60ec2
+  Banks:
+  - {fileID: 114174232975829694}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &114697014041566634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,7 +747,7 @@ MonoBehaviour:
   Path: event:/Collectible
   guid: b9ddaf4e60fe2b49875a4800a35b56ec
   Banks:
-  - {fileID: 114703231141967308}
+  - {fileID: 114174232975829694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -730,7 +772,7 @@ MonoBehaviour:
   lastModified: 637160024308017411
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114706682467431030
 MonoBehaviour:
   m_ObjectHideFlags: 0
