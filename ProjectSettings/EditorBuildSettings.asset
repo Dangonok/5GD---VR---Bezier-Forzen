@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scene/LightSpell.unity
     guid: 5bda813acbced814583a30edea08cfc5
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scene/sampleScene.unity
     guid: 439460524565fb24a886141b5169e509
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scene/fps.unity
     guid: 6e79836484867a44d816f730875bca0f
   m_configObjects: {}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Dreamteck.Splines;
 using Valve.VR;
+using UnityEngine.SceneManagement;
 
 
 public class SplineManager : MonoBehaviour
@@ -71,6 +72,13 @@ public class SplineManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);  
+        }
+
+
+
         CheckForEndOfPath();
         if (spline.pointCount > Mathf.Infinity)
         {

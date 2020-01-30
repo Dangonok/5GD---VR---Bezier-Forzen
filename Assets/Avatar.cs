@@ -118,7 +118,9 @@ public class Avatar : MonoBehaviour
         }
         if (other.tag == "collectible")
         {
-            compassMat.DOColor(Color.white, "_EmissionColor", 1).SetLoops(2, LoopType.Yoyo); ;
+            compassMat.DOColor(Color.white, "_EmissionColor", 1.25f).SetLoops(2, LoopType.Yoyo); 
+            compassMat.DOColor(Color.white, "_Color", 1.25f).SetLoops(2, LoopType.Yoyo); 
+
             collectibleCount += 1;
             collectibleText.text = "Collectible : " + collectibleCount.ToString() + "/" + howManyCollectibleYouNeed.ToString();
             SoundManager.Instance.ContactSoundCollectible();
