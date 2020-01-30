@@ -237,28 +237,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7349126322863470036, guid: d0b8a5f50984aeb4cb2f1f822087cdc1,
-        type: 3}
-      propertyPath: overridingColor.r
-      value: 0.39314446
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349126322863470036, guid: d0b8a5f50984aeb4cb2f1f822087cdc1,
-        type: 3}
-      propertyPath: overridingColor.g
-      value: 0.8066568
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349126322863470036, guid: d0b8a5f50984aeb4cb2f1f822087cdc1,
-        type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349126322863470037, guid: d0b8a5f50984aeb4cb2f1f822087cdc1,
-        type: 3}
-      propertyPath: m_Range
-      value: 70
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8678664970677538378, guid: d0b8a5f50984aeb4cb2f1f822087cdc1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0b8a5f50984aeb4cb2f1f822087cdc1, type: 3}
 --- !u!4 &7956283418564087354 stripped
 Transform:
