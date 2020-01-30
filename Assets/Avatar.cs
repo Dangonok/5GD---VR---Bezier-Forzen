@@ -14,7 +14,7 @@ public class Avatar : MonoBehaviour
     int collectibleCount = 0;
     int lastCollectibleCount = 0;
     [SerializeField] int howManyCollectibleYouNeed;
-
+    [SerializeField] Material compassMat;
 
     [Header ("Compass Part")]
     public GameObject interestPoint;
@@ -30,7 +30,9 @@ public class Avatar : MonoBehaviour
         PositionOfThePointOfInterest();
         interestPointCompassPos.transform.LookAt(posToLookAt);
         GlitchedCompass();
-       // StartCoroutine(GlitchedCompass());
+        // StartCoroutine(GlitchedCompass());
+
+
     }
 
 
@@ -116,6 +118,7 @@ public class Avatar : MonoBehaviour
         }
         if (other.tag == "collectible")
         {
+            compassMat.DOColor(Color.white, "_EmissionColor", 1).SetLoops(2, LoopType.Yoyo); ;
             collectibleCount += 1;
             collectibleText.text = "Collectible : " + collectibleCount.ToString() + "/" + howManyCollectibleYouNeed.ToString();
             SoundManager.Instance.ContactSoundCollectible();
