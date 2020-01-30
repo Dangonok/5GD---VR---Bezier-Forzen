@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2278420b9697f468be47e1ad4ff8c4, type: 3}
   m_Name: GameDats_02
   m_EditorClassIdentifier: 
-  playerSpeed: 10
+  playerSpeed: 20
   previsualisation: 1
   preInstantiate: 1
   infinityPath: 0
