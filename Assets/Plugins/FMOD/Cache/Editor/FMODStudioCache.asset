@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114338219564509164}
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   EditorEvents:
   - {fileID: 114748129690997034}
   - {fileID: 114373118274441400}
@@ -25,10 +25,10 @@ MonoBehaviour:
   - {fileID: 114873248967686700}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   StringsBanks:
   - {fileID: 114338219564509164}
-  stringsBankWriteTime: 637159067594629251
+  stringsBankWriteTime: 637159126003373810
   cacheVersion: 3
 --- !u!114 &114056655659258286
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   Path: event:/Collectible Impact
   guid: 7cc64c312b845d49b131379330a6b42e
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -53,6 +53,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3600
+--- !u!114 &114130492748385628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637159126003303673
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114148790204317636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637159067594629251
+  lastModified: 637159126003373810
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -106,7 +124,7 @@ MonoBehaviour:
   Path: event:/Interest Point
   guid: 3b822e94d0b88544b75a1f8c0be84ff2
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -147,7 +165,7 @@ MonoBehaviour:
   Path: event:/Collectible
   guid: b9ddaf4e60fe2b49875a4800a35b56ec
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -170,7 +188,7 @@ MonoBehaviour:
   Path: event:/Interest Point Impact
   guid: d0973967f06926418b9646474f0bb7ef
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -195,7 +213,7 @@ MonoBehaviour:
   lastModified: 637159067594547330
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114748129690997034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +229,7 @@ MonoBehaviour:
   Path: event:/Create New Part Of Path
   guid: 0d8ed5e1c6dede4ab5263cf6f8d50d19
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -234,7 +252,7 @@ MonoBehaviour:
   Path: event:/Impact Death
   guid: d7f81665d948ff4caeef98d6fde126bd
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -257,7 +275,7 @@ MonoBehaviour:
   Path: event:/Impossible creation path
   guid: 89b3a8c3a31e1c4c8a69520251c96c18
   Banks:
-  - {fileID: 114719321942660492}
+  - {fileID: 114130492748385628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
