@@ -71,7 +71,7 @@ public class SplineManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CheckForEndOfPath();
+        CheckForEndOfPath();
         if (spline.pointCount > Mathf.Infinity)
         {
             DestroyTheFirstX(1);
@@ -166,8 +166,8 @@ public class SplineManager : MonoBehaviour
 
         if (splineFollower.result.percent > valueToDrawAnotherPoint)
         {
-
-            InstantiateForEndOfRoad();
+            InstantiateANewAnchor(false, null);
+            //InstantiateForEndOfRoad();
         }
     }
 

@@ -36,7 +36,7 @@ MonoBehaviour:
   deathRedo: 4
   maxDistanceCompass: 500
   maxSphereRange: 150
-  PourcentageOfLastSegment: 60
+  PourcentageOfLastSegment: 95
   brightnessMax: 15
   progressifLighting: 25
   durationOfLight: 1
