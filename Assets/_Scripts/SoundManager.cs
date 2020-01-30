@@ -140,6 +140,7 @@ public class SoundManager : Singleton<SoundManager>
     public void NewPartCreate()
     {
         newPartCreateInstance.start();
+        print("Sound");
 
     }
 

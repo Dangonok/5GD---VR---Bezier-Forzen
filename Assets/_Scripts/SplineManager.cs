@@ -88,7 +88,7 @@ public class SplineManager : MonoBehaviour
                 if (1f - (1f/spline.pointCount)*2 < splineFollower.result.percent)
                 {
                     InstantiateANewAnchor(false, null);
-                    SoundManager.Instance.NewPartCreate();
+                    print("Yolo");
                 }
                 else
                 {
@@ -134,7 +134,7 @@ public class SplineManager : MonoBehaviour
             {
                 value = 0.01f;
             }
-            print(value + "    " + i);
+
             spline.SetPointSize((int)i, value);
         }
     }
@@ -233,6 +233,7 @@ public class SplineManager : MonoBehaviour
 
         //CreateAPointClampSpline(newPoint);
         CreateAPoint(newPoint);
+
         spline.RebuildImmediate();
         splineFollower.result.percent = (double)(splineFollower.result.percent / ((double)1 / (double)(double)spline.pointCount
                                         * ((double)(double)spline.pointCount + (double)1)));
@@ -335,5 +336,7 @@ public class SplineManager : MonoBehaviour
         }
         newPoints[newPoints.Length - 1] = newPoint;
         spline.SetPoints(newPoints);
+        SoundManager.Instance.NewPartCreate();
+
     }
 }
